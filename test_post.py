@@ -3,7 +3,7 @@ import  requests,sys,os,re,json
 from bs4 import BeautifulSoup
 class Spider:
     def __init__(self,stuname,stuid):
-        self.url = 'http://615.hljdx.net/new/tc20152.php'
+        self.url = 'http:www.xxx.com/xx.php'
         self.header = {'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:47.0) Gecko/20100101 Firefox/47.0'}
         self.s = requests.session()
         self.stuname = stuname
@@ -41,12 +41,12 @@ if __name__ == '__main__':
     idata1 = idata.split(",")[0]
     idata2 = idata.split(",")[1]
     fl.close()
-    stuname = r'柴耀'
+    stuname = r'姓名'
     #stuname = idata1
     #print stuname
     #stuid = idata2
     #print stuid
-    stuid = '20146204'
+    stuid = '****9900'
     print stuname,stuid
     aa = Spider(stuname,stuid)
     aa.main()
